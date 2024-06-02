@@ -1,0 +1,40 @@
+name: news_app
+description: "test"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cached_network_image: ^3.3.1
+  freezed: ^2.5.2
+  freezed_annotation: ^2.4.1
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.5
+  flutter_svg: ^2.0.10+1
+  copy_with_extension: ^5.0.4
+  copy_with_extension_gen: ^5.0.4
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: SF-Pro-Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+        - asset: assets/fonts/SF-Pro-Display-Medium.otf
+          style: italic
+        - asset: assets/fonts/SF-Pro-Display-Regular.otf
+          weight: 700
+
